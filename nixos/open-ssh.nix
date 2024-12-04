@@ -8,7 +8,7 @@
       PasswordAuthentication = false;
       KbdInteractiveAuthentication = false;
       PermitRootLogin = "no";
-      AllowUsers = [ "xnm" ];
+      AllowUsers = [ "jondaw" ];
     };
   };
 }

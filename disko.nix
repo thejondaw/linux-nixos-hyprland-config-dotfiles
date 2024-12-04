@@ -52,7 +52,6 @@
                         "space_cache=v2"
                         "ssd_spread"
                         "discard=async"
-                        "autodefrag"
                         "commit=120"
                       ];
                     };

@@ -10,7 +10,7 @@
   #   enable = true;
   #   setSocketVariable = true;
   # };
-  # users.extraGroups.docker.members = [ "xnm" ];
+  # users.extraGroups.docker.members = [ "jondaw" ];
 
   # Enable Podman
   virtualisation = {
@@ -26,7 +26,7 @@
     };
   };
   environment.variables.DBX_CONTAINER_MANAGER = "podman";
-  users.extraGroups.podman.members = [ "xnm" ];
+  users.extraGroups.podman.members = [ "jondaw" ];
 
   environment.systemPackages = with pkgs; [
     # nerdctl
