@@ -6,7 +6,7 @@
 
 
 
-  boot.initrd.luks.devices."luks-UUID".device = "/dev/disk/by-uuid/49c554b1-629b-4ab1-a7dd-fcbb728b22fc";
+  boot.initrd.luks.devices."luks-49c554b1-629b-4ab1-a7dd-fcbb728b22fc".device = "/dev/disk/by-uuid/49c554b1-629b-4ab1-a7dd-fcbb728b22fc";
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
