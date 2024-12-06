@@ -61,7 +61,7 @@ lsusb > usb_devices.txt
 2. Скопируйте автоматически сгенерированный блок кода:
 
 ```nix
-boot.initrd.luks.devices."luks-...".device = "/dev/disk/by-uuid/...";
+boot.initrd.luks.devices."luks-UUID".device = "/dev/disk/by-uuid/ТВОЙ-UUID";
 ```
 
 в один из файлов:
@@ -128,7 +128,10 @@ sudo chown -R root:root /etc/nixos
 Выполните одну из команд:
 
 ```shell
-sudo nixos-rebuild switch --flake /etc/nixos#your-hostname --update-input nixpkgs --update-input rust-overlay --commit-lock-file --upgrade
+sudo nixos-rebuild switch --flake /etc/nixos#nixos --update-input nixpkgs --update-input rust-overlay --commit-lock-file --upgrade
+
+# Or
+nswitchu
 ```
 
 или
